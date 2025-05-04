@@ -661,7 +661,7 @@ main {
   .page-header .slogan {
     background-color:#ffffff;
     color: black;
-    margin : 20px;
+    margin : 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -674,10 +674,16 @@ main {
     border-radius: 10px;
     box-shadow: none;
   }
+  .slogan i {
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+  }
   .slogan span {
     margin-left: 10px;
     font-style: poppins; 
     font-weight:500;
+    font-size: 15px;
   }
   .top-categories h1 {
     font-size: 30px;
