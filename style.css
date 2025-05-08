@@ -387,7 +387,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1;
 }
 .categories .previous-button:hover {
   background-color: #f85300;
@@ -404,7 +404,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1;
 }
 .categories .next-button:hover {
   background-color: #f85300;
@@ -688,7 +688,11 @@ main {
   .top-categories h1 {
     font-size: 30px;
   }
+  .top-categories-list {
+    gap: 0;
+  }
   .top-categories-list a {
+    margin-right: 15px;
     font-size: 18px;
   }
   .categories {
@@ -697,7 +701,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 0 70px 0 70px;
+    min-width: 100%;
+    padding: 0;
   }
   .card {
     position: relative;
@@ -718,13 +723,22 @@ main {
     text-align: left;
     transform: translateY(100%);
   }
-  .categories {
-    margin-left: 300px;
-  }
   .categories .previous-button {
-    left: 90px;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
   }
   .categories .next-button {
-    right: 390px;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
   }
 }  
+@media only screen and (max-width: 490px) {
+  .categories .previous-button {
+    left: 20%;
+  }
+  .categories .next-button {
+    right: 20%;
+  }
+}
