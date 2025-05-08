@@ -33,6 +33,11 @@ html {
   cursor: pointer;
   z-index: 1000;
 }
+.scroll-to-top i {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
 
 
 body {
